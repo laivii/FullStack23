@@ -3,10 +3,14 @@ var fs = require("fs");
 fs.openSync("./uusiFile.txt", "a+");
 
 var data = fs.readFileSync('./example.txt');
-var data2 = fs.readFileSync('./example2.txt');
+data += fs.readFileSync('./example2.txt');
 
-fs.writeFileSync('uusiFile.txt', data);
-fs.appendFileSync('uusiFile.txt', data2);
+fs.writeFileSync('uusiFile.txt', data, (err) => {
+    if (err) throw err;
+    console.log("Yhdistelmätiedosto on tallennettu...");
+});
 
-var uusiData = fs.readFileSync("./uusiFile.txt");
-console.log(uusiData.toString());
+fs.appendFile('uusiFile.txt', "I wrote this", (err) => {
+    if (err) throw err;
+    console.log("lisätty");
+});
