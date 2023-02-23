@@ -1,0 +1,159 @@
+body {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'IBM Plex mono', monospace;
+    font-size: 17px;
+}
+
+#navigation {
+    line-height: 60px;
+}
+
+.spacer {
+    height: 10px;
+}
+
+#logo {
+    text-align: left;
+}
+
+.header_image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+#header1 {
+    background-image: url("images/headers/epämukavuusalue.png");
+}
+
+#header2 {
+    background-image: url("images/headers/kesätaivas.png");
+}
+
+#header3 {
+    background-image: url("images/headers/värisotku.png");
+}
+
+.main_heading {
+    color: white;
+    font-size: 128px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer {
+    background-color: rgb(252, 3, 144);
+    color: #FFFFFF;
+    padding: 1%;
+    vertical-align: middle;
+}
+
+hr {
+    height:3px;
+    background-color: #fc0390;
+    border-width: 0;
+    width:142px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+.content2 {
+    text-align: left;
+    font-size: 16px;
+    padding: 3%;
+}
+
+.content_bgcolor {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button_type1 {
+    background-color: #fc0390;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-width: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 1% 2% 1% 2%;
+    margin-bottom: 3%;
+}
+
+.button_type2 {
+    border: 2px solid #fc0390;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 18px;
+    padding: 0.5% 2% 0.5% 2%;
+}
+
+h5 {
+    border-bottom: 3px solid #ffffff;
+    width: 142px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h3 {
+    margin-top: 3%;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    background-color: #fc0390;
+}
+
+.footer_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project_wrap {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.project_description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fc0390a6;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project_wrap:hover .project_description {
+    visibility: visible;
+    opacity: 1;
+}
